@@ -1,0 +1,110 @@
+body{
+    font-family: sans-serif;
+    background: url('https://cdn.discordapp.com/attachments/824143307923259415/845314909705469962/backgroundquiz.jpg');
+    background-attachment: fixed;
+}
+#title{
+    font-family: Architects Daughter; font-size: 100px; color: white; background-color: #acacacaf;
+}
+#choose{
+    height: 320px;
+}
+
+.button-musik{
+    height: 20px;
+    width: 20px;
+}
+.headquiz{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    line-height: 5px;
+    padding-bottom: 10px;
+    color: rgb(24, 22, 22);
+}
+#science{
+    padding: 2rem;
+    display: none;
+}
+#science .container{
+    background-color: #42d38b;
+}
+#science .question{
+    font-size: 25px;
+    font-family: Architects Daughter;
+    color: white;
+    padding: 25px 0px;
+}
+#science #timer1{
+    background-color: rgb(205, 92, 92);
+    width: 150px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: Architects Daughter;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 25px 0px;
+}
+/* update */
+/* add css Result */
+#skor{
+    display: none;
+    padding: 2rem;
+    
+}
+#skor .container{
+    background-color: #48ddd1;
+    padding: 2rem;
+}
+#result{
+    font-family: Architects Daughter; font-size: 100px; color: black;;
+}
+#benar{
+    font-size: 50px;
+}
+#salah{
+    font-size: 50px;
+}
+
+#science .answer .optional{
+    background-color: rgb(27, 34, 46);
+    padding:15px;
+    font-size: 20px;
+    line-height: 22px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Architects Daughter;
+        /* update add for optional */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* update */
+/* add color correct answer */
+#science .answer .optional.correct::before{
+    background-color: rgba(0, 192, 0, 0.849);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* add color correct answer */
+#science .answer .optional.wrong::before{
+    background-color: rgba(197, 11, 11, 0.746);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#science .answer .optional.already-answer{
+    pointer-events: none;
+}
